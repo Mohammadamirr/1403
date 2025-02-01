@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>صفحه ورود و ثبت نام</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/all.min.js">
+</head>
+<body>
+    <div class="container" id="container">
+        <div class="form-container sign-in-container">
+            <form action="#" class="login-form" id="loginForm">
+                <h2>ورود به حساب کاربری</h2>
+                <div class="input-group">
+                    <label for="E-mail">ایمیل</label>
+                    <input type="email" id="loginEmail" placeholder="ایمیل را وارد کنید" required>
+                </div>
+                <div class="input-group">
+                    <label for="Password">رمز عبور</label>
+                    <input type="password" id="loginPassword" placeholder="رمز عبور را وارد کنید" required>
+                </div>
+                <a href="#" id="forgotPassword">فراموشی رمز عبور</a>
+                <button type="submit">ورود</button>
+                <p>ساخت اکانت<a href="#" id="signup">ثبت نام</a></p>
+            </form>
+        </div>
+        <div class="form-container sign-up-container" id="signUpContainer">
+            <form>
+                <h2>ایجاد حساب کاربری</h2>
+                <div class="input-group">
+                    <label for="Name">نام</label>
+                    <input type="text" id="signupName" placeholder="نام" required>
+                </div>
+                <div>
+                    <label for="">نام خانوادگی</label>
+                    <input type="text" id="signupNickname" placeholder="نام خانوادگی" required>
+                </div>
+                <div>
+                    <label for="">شماره تلفن</label>
+                    <input type="number" id="signupPhone" placeholder="شماره تلفن" required>
+                </div>
+                <div>
+                    <label for="">ایمیل</label>
+                    <input type="email" id="signupEmail" placeholder="ایمیل">
+                </div>
+                <div>
+                    <label for="">رمز عبور</label>
+                    <input type="password" id="signupPassword" placeholder="رمز عبور">
+                </div>
+                <div>
+                    <label for="">نام کاربری</label>
+                    <input type="text" id="signupUsername" placeholder="نام کاربری" required>
+                </div>
+                <button type="submit">ثبت نام</button>
+                <p>حساب کاربری داری؟<a href="#" id="signin"></a></p>
+            </form>
+        </div>
+        <div class="form-container forgot-password-container" id="forgotPasswordContainer">
+            <form action="#" class="forgot-form" id="forgotForm">
+                <h2>بازیابی رمز عبور</h2>
+                <div class="input-group">
+                    <label for="email">ایمیل</label>
+                    <input type="email" id="forgotEmail" placeholder="ایمیل را وارد کنید" required>
+                </div>
+                <button type="submit">بازیابی</button>
+                <p>به یاد داری؟<a href="#" id="BackToLogin"></a></p>
+            </form>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
