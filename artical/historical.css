@@ -1,0 +1,113 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Vazir', sans-serif;
+    direction: rtl;
+    background-color: #f3f7fa;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* سرصفحه */
+header {
+    background-color: #0080ff;
+    color: #fff;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-left: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #d1e8ff;
+}
+
+main {
+    padding: 30px 0;
+}
+
+article h2 {
+    color: #005bb5;
+    margin-bottom: 20px;
+}
+
+article img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+article p {
+    line-height: 1.8;
+    text-align: justify;
+}
+
+article h3, article h4 {
+    color: #005bb5;
+    margin-top: 30px;
+}
+
+article ul, article ol {
+    margin: 15px 0;
+    padding-left: 20px;
+}
+
+article hr {
+    margin: 40px 0;
+}
+
+footer {
+    background-color: #0066cc;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+}
