@@ -1,0 +1,30 @@
+@font-face {
+    font-family: iran;
+    src: url(IRANSANSBOLD-EDIT.TTF);
+}
+@font-face {
+    font-family: far;
+    src: url(Digi\ Derakhshandeh.ttf);
+}
+.footer{
+    background-image: linear-gradient(rgb(70, 97, 255), rgb(45, 12, 196));
+    padding: 45px 60px;
+    border-radius: 30px;
+    width: 75%;
+    position: relative;
+    box-shadow: 0px 10px 40px;
+    margin: auto;
+}
+
+h1{
+    color: rgb(54, 47, 92);
+    font-family: 'far';
+    font-size: 150px;
+    font-style: oblique;
+    font-weight: bold;
+    position: absolute;
+}
+.footer h1{
+    right: 20rem;
+    top: 2rem;
+}
