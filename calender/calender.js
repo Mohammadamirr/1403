@@ -14,3 +14,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
     calendar.render();
 });
+
+const darkmode = new Darkmode();
+darkmode.showWidget();
+document.getElementById('dark-mode-toggle').addEventListener('click', () => {
+    darkmode.toggle();
+});

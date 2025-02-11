@@ -48,3 +48,9 @@ function addMessage(sender, text) {
     // اسکرول به انتهای پیام‌ها
     messagesContainer.scrollTop = messagesContainer.scrollHeight;
 }
+
+const darkmode = new Darkmode();
+darkmode.showWidget();
+document.getElementById('dark-mode-toggle').addEventListener('click', () => {
+    darkmode.toggle();
+});

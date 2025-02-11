@@ -90,3 +90,9 @@ forgotForm.addEventListener('submit', function (e) {
         email.classList.add('invalid')
     }
 });
+
+const darkmode = new Darkmode();
+darkmode.showWidget();
+document.getElementById('dark-mode-toggle').addEventListener('click', () => {
+    darkmode.toggle();
+});
