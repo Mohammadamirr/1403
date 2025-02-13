@@ -1,3 +1,12 @@
+@font-face {
+    font-family: iran;
+    src: url(IRANSANSBOLD-EDIT.TTF);
+}
+@font-face {
+    font-family: far;
+    src: url(Digi\ Derakhshandeh.ttf);
+}
+
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
