@@ -31,9 +31,10 @@ h1{
 
 .search-container {
     position: relative;
-    width: 100%;
+    width: 55%;
     max-width: 600px;
-    margin: 0 auto 20px;
+    margin:  auto;
+    border-radius: 30px;
 }
 
 .search-icon {
