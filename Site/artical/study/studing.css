@@ -1,0 +1,80 @@
+@font-face {
+    font-family: iran;
+    src: url(IRANSANSBOLD-EDIT.TTF);
+}
+@font-face {
+    font-family: far;
+    src: url(Digi\ Derakhshandeh.ttf);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    direction: rtl;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-image: linear-gradient(rgb(70, 97, 255), rgb(45, 12, 196));
+    padding: 45px 60px;
+    border-radius: 30px;
+    width: 75%;
+    position: relative;
+    box-shadow: 0px 10px 40px;
+    margin: auto;
+}
+
+header h1 {
+    right: 20rem;
+    top: 2rem;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 10px 0 0 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+}
+
+main h2 {
+    color: #3f51b5;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+section p {
+    line-height: 1.6;
+}
+
+a {
+    color: #3f51b5;
+}
+
+a:hover {
+    color: #303f9f;
+}
