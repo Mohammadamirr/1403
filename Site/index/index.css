@@ -39,9 +39,9 @@ h1{
 
 .search-icon {
     position: absolute;
-    top: 50%;
+    top: 15px;
     left: 15px;
-    transform: translateY(-50%);
+    /*transform: translateY(-50%);*/
     pointer-events: none;
 }
 
@@ -49,15 +49,18 @@ h1{
     fill: #888;
     width: 24px;
     height: 24px;
+    top:100px;
+    left: 50px;
+    margin-right: 8px;
 }
 
 #search-input {
-    width: 100%;
+    width: 75%;
     padding: 12px 20px 12px 50px;
-    font-size: 16px;
+    font-size: 1rem;
     box-sizing: border-box;
     border: 2px solid #ddd;
-    border-radius: 5px;
+    border-radius: 30px;
     direction: rtl;
 }
 
