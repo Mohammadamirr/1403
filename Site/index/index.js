@@ -70,3 +70,38 @@ darkmode.showWidget();
 document.getElementById('dark-mode-toggle').addEventListener('click', () => {
     darkmode.toggle();
 });
+
+const slider = new KeenSlider(".keen-slider", {
+    loop: true,
+    slides: { perView: 1 },
+    created: function (instance) {
+        const dots = document.querySelectorAll(".dot");
+        const thumbnails = document.querySelectorAll(".thumbnails img");
+        dots.forEach((dot, idx) => {
+            dot.addEventListener("click", () => {
+                instance.moveToSlide(idx);
+            });
+        });
+        thumbnails.forEach((thumb, idx) => {
+            thumb.addEventListener("click", () => {
+                instance.moveToSlide(idx);
+            });
+        });
+        document.querySelector(".arrow.left").addEventListener("click", () => {
+            instance.prev();
+        });
+        document.querySelector(".arrow.right").addEventListener("click", () => {
+            instance.next();
+        });
+    },
+    slideChanged: function (instance) {
+        const dots = document.querySelectorAll(".dot");
+        const thumbnails = document.querySelectorAll(".thumbnails img");
+        dots.forEach((dot, idx) => {
+            dot.classList.toggle("active", instance.details().relativeSlide === idx);
+        });
+        thumbnails.forEach((thumb, idx) => {
+            thumb.classList.toggle("active", instance.details().relativeSlide === idx);
+        });
+    },
+});
