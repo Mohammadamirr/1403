@@ -1,0 +1,166 @@
+@font-face {
+    font-family: iran;
+    src: url(IRANSANSBOLD-EDIT.TTF);
+}
+@font-face {
+    font-family: far;
+    src: url(Digi\ Derakhshandeh.ttf);
+}
+
+.footer{
+    background-image: linear-gradient(rgb(70, 97, 255), rgb(45, 12, 196));
+    padding: 45px 60px;
+    border-radius: 30px;
+    width: 75%;
+    position: relative;
+    box-shadow: 0px 10px 40px;
+    margin: auto;
+}
+
+h1{
+    color: rgb(54, 47, 92);
+    font-family: 'far';
+    font-size: 150px;
+    font-style: oblique;
+    font-weight: bold;
+    position: absolute;
+}
+.footer h1{
+    right: 20rem;
+    top: 2rem;
+}
+
+.search-container {
+    position: relative;
+    width: 55%;
+    max-width: 600px;
+    margin:  auto;
+    border-radius: 30px;
+}
+
+.search-icon {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    /*transform: translateY(-50%);*/
+    pointer-events: none;
+}
+
+.search-icon svg {
+    fill: #888;
+    width: 24px;
+    height: 24px;
+    top:100px;
+    left: 50px;
+    margin-right: 8px;
+}
+
+#search-input {
+    width: 75%;
+    padding: 12px 20px 12px 50px;
+    font-size: 1rem;
+    box-sizing: border-box;
+    border: 2px solid #ddd;
+    border-radius: 30px;
+    direction: rtl;
+}
+
+@media screen and (max-width: 768px) {
+    #search-input {
+        font-size: 14px;
+        padding: 10px 15px 10px 45px;
+    }
+
+    .search-icon {
+        left: 10px;
+    }
+
+    .search-icon svg {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+.circle-button {
+    background-color: #4a9;
+    color: white;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    justify-content: left;
+    align-items: start;
+    text-decoration: none;
+    cursor: pointer;
+}
+.circle-button svg {
+    width: 32px;
+    height: 32px;
+}
+.circle-button:hover {
+    background-color: #357ABD;
+}
+
+@media (max-width: 480px) {
+    .circle-button {
+        width: 48px;
+        height: 48px;
+    }
+    .circle-button svg {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+nav {
+    background-color: #e60000;
+    padding: 10px 0;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav ul li a:hover {
+    text-decoration: underline;
+}
+main {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+main h2 {
+    color: #cc0000;
+    margin-top: 40px;
+}
+main h3 {
+    color: #e60000;
+    margin-top: 30px;
+}
+main p {
+    text-align: justify;
+}
+footer {
+    background-color: #cc0000;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 40px;
+}
+@media (max-width: 600px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
