@@ -7,6 +7,12 @@
     src: url(Digi\ Derakhshandeh.ttf);
 }
 
+body{
+    direction: rtl;
+    margin: 20px;
+    background-color: #f9f9f9;
+}
+
 .footer{
     background-image: linear-gradient(rgb(70, 97, 255), rgb(45, 12, 196));
     padding: 45px 60px;
@@ -81,6 +87,160 @@ h1{
     }
 }
 
+.circle-button {
+    background-color: #4a9;
+    color: white;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    justify-content: left;
+    align-items: start;
+    text-decoration: none;
+    cursor: pointer;
+}
+.circle-button svg {
+    width: 32px;
+    height: 32px;
+}
+.circle-button:hover {
+    background-color: #357ABD;
+}
+
+@media (max-width: 480px) {
+    .circle-button {
+        width: 48px;
+        height: 48px;
+    }
+    .circle-button svg {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+h1, h2, h3 {
+    color: #2c3e50;
+}
+h1 {
+    text-align: center;
+}
+p {
+    text-align: justify;
+    line-height: 1.8;
+    color: #34495e;
+}
+ul {
+    list-style-type: square;
+    padding-right: 20px;
+}
+.faq {
+    background-color: #ecf0f1;
+    padding: 15px;
+    border-radius: 8px;
+}
+.faq h3 {
+    margin-top: 0;
+}
+hr {
+    border: 0;
+    height: 1px;
+    background-color: #bdc3c7;
+    margin: 40px 0;
+}
+a {
+    color: #2980b9;
+    text-decoration: none;
+}
+.highlight {
+    background-color: #dff9fb;
+    padding: 10px;
+    border-right: 5px solid #2980b9;
+    margin: 20px 0;
+}
+
+
+body {
+    font-family: Tahoma, sans-serif;
+    direction: rtl;
+    margin: 20px;
+    background-color: #f9f9f9;
+}
+h1, h2, h3 {
+    color: #2c3e50;
+}
+h1 {
+    text-align: center;
+}
+p {
+    text-align: justify;
+    line-height: 1.8;
+    color: #34495e;
+}
+ul {
+    list-style-type: square;
+    padding-right: 20px;
+}
+.faq {
+    background-color: #ecf0f1;
+    padding: 15px;
+    border-radius: 8px;
+}
+.faq h3 {
+    margin-top: 0;
+}
+hr {
+    border: 0;
+    height: 1px;
+    background-color: #bdc3c7;
+    margin: 40px 0;
+}
+a {
+    color: #2980b9;
+    text-decoration: none;
+}
+.highlight {
+    background-color: #dff9fb;
+    padding: 10px;
+    border-right: 5px solid #2980b9;
+    margin: 20px 0;
+}
+/* استایل‌های ریسپانسیو */
+@media (max-width: 768px) {
+    body {
+        margin: 10px;
+    }
+    h1 {
+        font-size: 1.8em;
+    }
+    h2 {
+        font-size: 1.5em;
+    }
+    p, li {
+        font-size: 1em;
+    }
+    .faq {
+        padding: 10px;
+    }
+}
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5em;
+    }
+    h2 {
+        font-size: 1.2em;
+    }
+    p, li {
+        font-size: 0.9em;
+    }
+    .highlight {
+        padding: 8px;
+        margin: 15px 0;
+    }
+    .faq {
+        padding: 8px;
+    }
+}
 .support-button{
     position: fixed;
     bottom: 20px;

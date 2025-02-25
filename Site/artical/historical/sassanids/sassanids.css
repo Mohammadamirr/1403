@@ -99,6 +99,38 @@ h1{
     }
 }
 
+.circle-button {
+    background-color: #4a9;
+    color: white;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    justify-content: left;
+    align-items: start;
+    text-decoration: none;
+    cursor: pointer;
+}
+.circle-button svg {
+    width: 32px;
+    height: 32px;
+}
+.circle-button:hover {
+    background-color: #357ABD;
+}
+
+@media (max-width: 480px) {
+    .circle-button {
+        width: 48px;
+        height: 48px;
+    }
+    .circle-button svg {
+        width: 24px;
+        height: 24px;
+    }
+}
+
 main {
     max-width: 800px;
     margin: 20px auto;
