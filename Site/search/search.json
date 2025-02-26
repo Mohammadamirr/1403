@@ -1,0 +1,52 @@
+{
+    "categories": [
+      {
+        "name": "تاریخی",
+        "slug": "historical",
+        "articles": [
+          {
+            "title": "دوران هخامنشیان",
+            "link": "../articles/historical/achaemenids.html"
+          },
+          {
+            "title": "دوران اشکانیان",
+            "link": "../artical/historical/parthians/parthians.html"
+          },
+          {
+            "title": "دوران ساسانیان",
+            "link": "../articles/historical/sassanids.html"
+          },{
+            "title": "دوران سلوکیان",
+            "link": "../articles/historical/seleucids.html"
+          },{
+            "title": "دوران جنگ های صلیبی",
+            "link": "../articles/historical/crusader.html"
+          }
+        ]
+      },
+      {
+        "name": "درسی",
+        "slug": "study",
+        "articles": [
+          {
+            "title": "نکات طلایی درس خواندن",
+            "link": "articles/study/studing.html"
+          }
+        ]
+      },
+    {
+        "name": "ورزشی",
+        "slug": "sports",
+        "articles": [
+          {
+            "title": "آشنایی با ورزش کونگ فو",
+            "link": "articles/science/kongfu.html"
+          },
+          {
+            "title": "آشنایی باورزش موی تای",
+            "link": "../articles/sports/muythai.html"
+          }
+        ]
+      }
+    ]
+  }
