@@ -2,21 +2,21 @@
     include('../header.php');
     $category = 'تاریخ';
     $articles = [
-        ['title' => 'دوران ساسانیان', 'link' => '../article/historical/sassanids.html'],
-        ['title' => 'دوران هخامنشیان', 'link' => '../article/historical/achaemenids.html'],
-        ['title' => 'دوران اشکانیان', 'link' => '../article/historical/parthians.html'],
-        ['title' => 'دوران سلوکیان', 'link' => '../aricle/historical/seleucids.html'],
-        ['title' => 'دوران جنگ های صلیبی', 'link' => '../article/historical/crusader.html']
+        ['title' => 'دوران ساسانیان', 'link' => '../article/historical/sassanids/sassanids.html'],
+        ['title' => 'دوران هخامنشیان', 'link' => '../article/historical/achaemenids/achaemenids.html'],
+        ['title' => 'دوران اشکانیان', 'link' => '../article/historical/parthians/parthians.html'],
+        ['title' => 'دوران سلوکیان', 'link' => '../aricle/historical/seleucids/seleucids.html'],
+        ['title' => 'دوران جنگ های صلیبی', 'link' => '../article/historical/crusader/crusader.html']
     ];
     $category = 'درسی';
     $articles = [
-        ['title' => 'نکات طلایی درس خواندن', 'link' => '../article/study/studing.html']
-        ['title' => 'انتخاب رشته پس از پایه نهم: نکات اصلی و راهنمای جامع' => '../article/study/choose field.html']
+        ['title' => 'نکات طلایی درس خواندن', 'link' => '../article/study/studing/studing.html']
+        ['title' => 'انتخاب رشته پس از پایه نهم: نکات اصلی و راهنمای جامع' => '../article/study/choose field/choose field.html']
     ]
     $category = 'ورزشی'
     $articles = [
-        ['title' => 'آشنایی با ورزش کونگ فو', 'link' => '../article/sports/kongfu.html'];
-        ['title' => 'آشنایی با ورزش موی تای', 'link' => '../article/sports/muythai.html']
+        ['title' => 'آشنایی با ورزش کونگ فو', 'link' => '../article/sports/kongfu/kongfu.html'];
+        ['title' => 'آشنایی با ورزش موی تای', 'link' => '../article/sports/muythai/muythai.html']
     ]
 ?>
 <main>
