@@ -105,3 +105,34 @@ const slider = new KeenSlider(".keen-slider", {
         });
     },
 });
+
+    var topButton = document.getElementById("scrollToTopBtn");
+
+    window.onscroll = function() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        topButton.style.display = "block";
+      } else {
+        topButton.style.display = "none";
+      }
+    };
+
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    if ('Notification' in window) {
+      Notification.requestPermission().then(function(permission) {
+      });
+    }
+
+    function publishPost() {
+      if ('Notification' in window && Notification.permission === 'granted') {
+        var options = {
+          body: "مطلب جدیدی منتشر شده است. لطفاً برای مشاهده به سایت مراجعه کنید.",
+          icon: "path/to/icon.png"
+        };
+        new Notification("انتشار مطلب جدید", options);
+      } else {
+        alert("مطلب جدید منتشر شد!");
+      }
+    }

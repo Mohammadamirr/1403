@@ -203,3 +203,50 @@ h1{
         height: 8px;
     }
 }
+
+    #scrollToTopBtn {
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 100;
+        background-color: #555;
+        color: #fff;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+
+      #scrollToTopBtn:hover {
+        background-color: #333;
+      }
+
+      footer {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+      }
+      .footer-container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+      .footer-row {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+      .footer-row > div {
+        margin: 5px;
+      }
+      .footer-end {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 0.9em;
+        padding-top: 10px;
+        border-top: 1px solid #444;
+      }
