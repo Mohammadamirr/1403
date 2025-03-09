@@ -24,19 +24,6 @@ body {
     margin: auto;
 }
 
-h1{
-    color: rgb(54, 47, 92);
-    font-family: 'far';
-    font-size: 150px;
-    font-style: oblique;
-    font-weight: bold;
-    position: absolute;
-}
-.footer h1{
-    right: 20rem;
-    top: 2rem;
-}
-
 .search-container {
     position: relative;
     width: 55%;
