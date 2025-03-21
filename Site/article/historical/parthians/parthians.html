@@ -7,7 +7,7 @@
     <meta name="keywords" content="اشکانیان, امپراتوری پارتیان, تاریخ ایران, فرهنگ اشکانی, هنر اشکانی
     <meta name="author" content="Your Name">
     <title>اشکانیان| بازگشت دوباره شکوه ایرانی</title>
-    <link rel="icon" href="/Site/photo_2025-03-09_19-11-13.jpg">
+    <link rel="icon" href="/Site/logo.jpg">
 </head>
 <body>
     <div class="footer">
@@ -92,6 +92,17 @@
 
     <div class="support-window" id="supportWindow">
     </div>
+    <div class="comment-section">
+        <h2>دیدگاه‌ها و پرسش‌ها</h2>
+        <button class="new-comment-btn">افزودن دیدگاه یا پرسش جدید</button>
+
+        <div class="comments-container">
+
+        <div class="new-comment-form" style="display: none;">
+          <textarea id="comment-input" placeholder="دیدگاه یا پرسش خود را وارد کنید..."></textarea>
+          <button id="submit-comment">ارسال دیدگاه</button>
+        </div>
+      </div>
     <script>
         function toggleSupportWindow() {
             var supportWindow =document.getElementById('supportWindow')
@@ -102,36 +113,6 @@
                 supportWindow.style.display = 'none'
             }
         }
-    </script>
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-    let xpGranted = false;
-
-    window.addEventListener('scroll', () => {
-      if (!xpGranted) {
-        const scrollPosition = window.scrollY + window.innerHeight;
-        const pageHeight = document.body.scrollHeight;
-
-        if (scrollPosition >= pageHeight * 0.9) {
-          xpGranted = true;
-          fetch('/api/grant-xp', {
-            method: 'POST',
-            headers: {
-              'Content-Type': 'application/json',
-              'X-CSRF-Token': csrfToken,
-            },
-            body: JSON.stringify({ articleId: ARTICLE_ID })
-          })
-          .then(response => response.json())
-          .then(data => {
-            if (data.success) {
-              alert('تبریک! شما XP این مقاله را دریافت کردید.');
-            }
-          });
-        }
-      }
-    });
-  });
     </script>
 </body>
 </html>

@@ -7,7 +7,7 @@
     <meta name="description" content="مقاله‌ای جامع درباره دوران سلوکیان، تأسیس، ویژگی‌های حکومتی و فرهنگی، اقتصاد و تجارت، چالش‌ها و زوال و میراث این دوران.">
     <meta name="keywords" content="دوران سلوکیان، تاریخ ایران، فرهنگ هلنیستی، امپراتوری سلوکی، اسکندر مقدونی">
     <link rel="stylesheet" href="./seleucids.css">
-    <link rel="icon" href="/Site/photo_2025-03-09_19-11-13.jpg">
+    <link rel="icon" href="/Site/logo.jpg">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/darkmode-js/2.0.1/darkmode.min.js"></script>
 </head>
 <body>
@@ -58,6 +58,18 @@
     <footer>
         <p>&copy; 2025 دانش‌سرا. همه حقوق محفوظ است.</p>
     </footer>
+    <div class="comment-section">
+        <h2>دیدگاه‌ها و پرسش‌ها</h2>
+        <button class="new-comment-btn">افزودن دیدگاه یا پرسش جدید</button>
+
+        <!-- لیست نظرات -->
+        <div class="comments-container">
+
+        <div class="new-comment-form" style="display: none;">
+          <textarea id="comment-input" placeholder="دیدگاه یا پرسش خود را وارد کنید..."></textarea>
+          <button id="submit-comment">ارسال دیدگاه</button>
+        </div>
+      </div>
     <script>
          document.addEventListener('DOMContentLoaded', () => {
     let xpGranted = false;
@@ -87,6 +99,66 @@
       }
     });
   });
+  document.addEventListener('DOMContentLoaded', function() {
+  const newCommentBtn = document.querySelector('.new-comment-btn');
+  const newCommentForm = document.querySelector('.new-comment-form');
+  const submitCommentBtn = document.getElementById('submit-comment');
+  const commentInput = document.getElementById('comment-input');
+  const commentsContainer = document.querySelector('.comments-container');
+
+  // نمایش/مخفی‌سازی فرم افزودن دیدگاه
+  newCommentBtn.addEventListener('click', function() {
+    if (newCommentForm.style.display === 'none' || newCommentForm.style.display === '') {
+      newCommentForm.style.display = 'block';
+    } else {
+      newCommentForm.style.display = 'none';
+    }
+  });
+
+  // افزودن یک دیدگاه جدید به لیست نظرات
+  submitCommentBtn.addEventListener('click', function() {
+    const commentText = commentInput.value.trim();
+    if (commentText !== '') {
+      // ایجاد المنت جدید برای دیدگاه
+      const commentDiv = document.createElement('div');
+      commentDiv.classList.add('comment');
+      commentDiv.innerHTML = `
+        <div class="comment-header">
+          <span class="username">کاربر جدید</span>
+          <span class="time">لحظه‌ای پیش</span>
+        </div>
+        <p class="comment-text">${commentText}</p>
+        <button class="reply-btn">پاسخ</button>
+        <div class="replies"></div>
+      `;
+      // افزودن به کانتینر نظرات
+      commentsContainer.appendChild(commentDiv);
+
+      // پاکسازی فرم
+      commentInput.value = '';
+      newCommentForm.style.display = 'none';
+
+      // افزودن رویداد برای دکمه پاسخ جدید
+      addReplyListener(commentDiv.querySelector('.reply-btn'));
+    } else {
+      alert('لطفاً دیدگاه خود را وارد کنید.');
+    }
+  });
+
+  // تابع افزودن رویداد به دکمه‌های پاسخ
+  function addReplyListener(button) {
+    button.addEventListener('click', function() {
+      // در اینجا می‌توانید فرم پاسخ‌دهی را نشان دهید یا عملکرد دلخواه را پیاده کنید.
+      alert('امکان پاسخ به دیدگاه فراهم شده است.');
+    });
+  }
+
+  // افزودن رویداد برای همه دکمه‌های اولیه پاسخ
+  document.querySelectorAll('.reply-btn').forEach(function(button) {
+    addReplyListener(button);
+  });
+});
+
     </script>
 </body>
 </html>

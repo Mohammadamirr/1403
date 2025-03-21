@@ -5,7 +5,7 @@
     <title>دوران هخامنشیان</title>
     <link rel="stylesheet" href="./achaemenids.css">
     <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v30.1.0/dist/font-face.css" rel="stylesheet" type="text/css" />
-    <link rel="icon" href="/Site/photo_2025-03-09_19-11-13.jpg">
+    <link rel="icon" href="/Site/logo.jpg">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/darkmode-js/2.0.1/darkmode.min.js"></script>
 </head>
 <body>
@@ -139,35 +139,5 @@
             <p>© ۲۰۲۳ دانش‌سرا | تمامی حقوق محفوظ است.</p>
         </div>
     </footer>
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-    let xpGranted = false;
-
-    window.addEventListener('scroll', () => {
-      if (!xpGranted) {
-        const scrollPosition = window.scrollY + window.innerHeight;
-        const pageHeight = document.body.scrollHeight;
-
-        if (scrollPosition >= pageHeight * 0.9) {
-          xpGranted = true;
-          fetch('/api/grant-xp', {
-            method: 'POST',
-            headers: {
-              'Content-Type': 'application/json',
-              'X-CSRF-Token': csrfToken,
-            },
-            body: JSON.stringify({ articleId: ARTICLE_ID })
-          })
-          .then(response => response.json())
-          .then(data => {
-            if (data.success) {
-              alert('تبریک! شما XP این مقاله را دریافت کردید.');
-            }
-          });
-        }
-      }
-    });
-  });
-    </script>
 </body>
 </html>

@@ -6,7 +6,7 @@
     <meta name="description" content="با تکنیک‌های طلایی درس خواندن، موفقیت تحصیلی خود را تضمین کنید. این راهنمای جامع به شما کمک می‌کند تا بهترین روش‌های مطالعه را بیاموزید.">
     <meta name="keywords" content="تکنیک‌های درس خواندن, موفقیت تحصیلی, روش‌های مطالعه, بهبود یادگیری, افزایش بهره‌وری">
     <link rel="stylesheet" href="./studing.css">
-    <link rel="website icon" href="/Site/photo_2025-03-09_19-11-13.jpg">
+    <link rel="website icon" href="/Site/logo.jpg">
 </head>
 <body>
     <header>
@@ -78,6 +78,18 @@
     <footer>
         <p>&copy; 2025 دانش سرا. همه حقوق محفوظ است.</p>
     </footer>
+    <div class="comment-section">
+        <h2>دیدگاه‌ها و پرسش‌ها</h2>
+        <button class="new-comment-btn">افزودن دیدگاه یا پرسش جدید</button>
+
+        <!-- لیست نظرات -->
+        <div class="comments-container">
+
+        <div class="new-comment-form" style="display: none;">
+          <textarea id="comment-input" placeholder="دیدگاه یا پرسش خود را وارد کنید..."></textarea>
+          <button id="submit-comment">ارسال دیدگاه</button>
+        </div>
+      </div>
     <script>
         document.addEventListener('DOMContentLoaded', () => {
     let xpGranted = false;
@@ -107,6 +119,65 @@
       }
     });
   });
+  document.addEventListener('DOMContentLoaded', function() {
+  const newCommentBtn = document.querySelector('.new-comment-btn');
+  const newCommentForm = document.querySelector('.new-comment-form');
+  const submitCommentBtn = document.getElementById('submit-comment');
+  const commentInput = document.getElementById('comment-input');
+  const commentsContainer = document.querySelector('.comments-container');
+
+  // نمایش/مخفی‌سازی فرم افزودن دیدگاه
+  newCommentBtn.addEventListener('click', function() {
+    if (newCommentForm.style.display === 'none' || newCommentForm.style.display === '') {
+      newCommentForm.style.display = 'block';
+    } else {
+      newCommentForm.style.display = 'none';
+    }
+  });
+
+  // افزودن یک دیدگاه جدید به لیست نظرات
+  submitCommentBtn.addEventListener('click', function() {
+    const commentText = commentInput.value.trim();
+    if (commentText !== '') {
+      // ایجاد المنت جدید برای دیدگاه
+      const commentDiv = document.createElement('div');
+      commentDiv.classList.add('comment');
+      commentDiv.innerHTML = `
+        <div class="comment-header">
+          <span class="username">کاربر جدید</span>
+          <span class="time">لحظه‌ای پیش</span>
+        </div>
+        <p class="comment-text">${commentText}</p>
+        <button class="reply-btn">پاسخ</button>
+        <div class="replies"></div>
+      `;
+      // افزودن به کانتینر نظرات
+      commentsContainer.appendChild(commentDiv);
+
+      // پاکسازی فرم
+      commentInput.value = '';
+      newCommentForm.style.display = 'none';
+
+      // افزودن رویداد برای دکمه پاسخ جدید
+      addReplyListener(commentDiv.querySelector('.reply-btn'));
+    } else {
+      alert('لطفاً دیدگاه خود را وارد کنید.');
+    }
+  });
+
+  // تابع افزودن رویداد به دکمه‌های پاسخ
+  function addReplyListener(button) {
+    button.addEventListener('click', function() {
+      // در اینجا می‌توانید فرم پاسخ‌دهی را نشان دهید یا عملکرد دلخواه را پیاده کنید.
+      alert('امکان پاسخ به دیدگاه فراهم شده است.');
+    });
+  }
+
+  // افزودن رویداد برای همه دکمه‌های اولیه پاسخ
+  document.querySelectorAll('.reply-btn').forEach(function(button) {
+    addReplyListener(button);
+  });
+});
     </script>
 </body>
 </html>
