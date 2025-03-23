@@ -1,12 +1,3 @@
-@font-face {
-    font-family: iran;
-    src: url(IRANSANSBOLD-EDIT.TTF);
-}
-@font-face {
-    font-family: far;
-    src: url(Digi\ Derakhshandeh.ttf);
-}
-
 .footer{
     background-image: linear-gradient(rgb(70, 97, 255), rgb(45, 12, 196));
     padding: 45px 60px;
