@@ -1,10 +1,3 @@
-let likeCount = 0;
-    // افزودن رویداد کلیک برای دکمه لایک;
-document.getElementById('like-button').addEventListener('click', function() {
-    likeCount++;
-    document.getElementById('like-count').innerText = likeCount;
-});
-
 document.addEventListener('DOMContentLoaded', function() {
     // دریافت عناصر مورد نیاز
     var mainContent = document.querySelector('main');
