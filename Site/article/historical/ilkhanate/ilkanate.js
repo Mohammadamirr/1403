@@ -74,7 +74,6 @@ document.addEventListener('DOMContentLoaded', function() {
         `;
         // افزودن به کانتینر نظرات
         commentsContainer.appendChild(commentDiv);
-
         // پاکسازی فرم
         commentInput.value = '';
         newCommentForm.style.display = 'none';
