@@ -2,12 +2,15 @@
 <html lang="fa">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="مقاله‌ای تحلیلی از دوران زندیه با تمرکز بر حکومت کریم‌خان زند">
   <meta name="keywords" content="زندیه, کریم‌خان, تاریخ ایران, حکومت مردمی, مقاله تاریخی">
-  <meta name="author" content="تاریخ‌دان معاصر ایرانی">
+  <meta name="author" content="محمدامیر بشردوست">
   <title>دوران زندیه؛ نگاهی به حکومت کریم‌خان زند</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./zand.css">
+  <link rel="stylesheet" href="/Site/support/support.html">
+  <link rel="stylesheet" href="/Site/support/support.css">
+  <link rel="stylesheet" href="/Site/logo.jpg">
 </head>
 <body>
 
@@ -15,6 +18,22 @@
     <h1>دوران زندیه؛ نگاهی به حکومت کریم‌خان زند</h1>
     <p>تحلیلی از دوران زندیه از دیدگاه یک تاریخ‌دان معاصر ایرانی</p>
   </header>
+
+  <div class="footer">
+        <div class="search-bar">
+            <span class="search-bar-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                </svg>
+            </span>
+            <input action="/search" type="text" id="search-input" placeholder="دنبال چه هستی؟">
+        </div>
+        <a href="../login/login.html" class="circle-button">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+                <circle cx="32" cy="20" r="16" fill="#fff"/>
+                <path d="M32 40c-11 0-20 9-20 20h40c0-11-9-20-20-20z" fill="#fff"/>
+            </svg>
+        </a>
+    </div>
 
   <main>
     <section id="intro">
@@ -96,6 +115,21 @@
   <footer>
     <p>تهیه و تنظیم: یک تاریخ‌دان معاصر ایرانی - &copy; 2025</p>
   </footer>
+
+  <div class="comment-section">
+    <h2>دیدگاه‌ها و پرسش‌ها</h2>
+    <button class="new-comment-btn">افزودن دیدگاه یا پرسش جدید</button>
+
+    <div class="comments-container">
+
+    <div class="new-comment-form" style="display: none;">
+      <textarea id="comment-input" placeholder="دیدگاه یا پرسش خود را وارد کنید..."></textarea>
+      <button id="submit-comment">ارسال دیدگاه</button>
+    </div>
+   </div>
+
+  <script src="./zand.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/darkmode-js/2.0.1/darkmode.min.js"></script>
 
 </body>
 </html>
